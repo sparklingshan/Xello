@@ -5,9 +5,13 @@ body {
     padding: 0;
     -webkit-font-smoothing: antialiased;
     color: #9ca4ab;
-    background-color: #eeeeee
+    background-color: #FAFAFA;
+    font-family: Open Sans, Helvetica, sans-serif;
 }
 
 @import "home.scss";
+@import "filter.scss";
+@import "board.scss";
+@import "emptySlot.scss";
 
   

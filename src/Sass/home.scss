@@ -1,7 +1,8 @@
 .hotspot{
     width: 1366px;
     height: 804px;
-    background-color: #efefef;
+    background-color: #FAFAFA;
+    margin: 0 auto;
 }
 
 .home-nav{
@@ -9,7 +10,26 @@
 }
 
 .home-nav h1{
-    color: #555;
-    padding-top: 6%;
-    font-size: 1.5em;
+    color: #484848;
+    padding-top: 5%;
+    font-size: 1.4em;
+    font-weight: bold;
+    float: left;
+}
+
+.bg-success{
+    background-color: #7FC12F !important;
+}
+
+.circle{
+    background-color: #D14664;
+    border-radius: 50%;
+    width: 21px;
+    height: 21px;
+    font-size: 0.7em;
+    padding-left: 3px;
+    padding-top: 1px;
+    color: white;
+    float: left;
+    margin-top: 0%;
 }
