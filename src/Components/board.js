@@ -1,7 +1,13 @@
 import React,{Component} from "react";
 import EmptySlot from "./empty_slot";
+import $ from 'jquery';
 
 class Board extends Component{
+    componentDidMount(){
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    }
     render(){     
         let slots = [];  
         for (let i = 0 ;i<8;i++){
@@ -29,6 +35,9 @@ class Board extends Component{
                                 <span className='green-slot-title'>Functions</span><br/>
                                 <span className='green-slot-code'>MAT1U1 <span style={{color: "#aaa"}}>| Math 9</span></span>
                                 <span className='green-slot-corner'>1 cr.</span>
+                                <div className='tp' data-toggle="tooltip" data-placement="top" data-html="true" title="<div>This course requires pre-Acquisite</div>">
+                                    !
+                                </div>
                             </div>
                         </div>
                         <div className='slot-add'>

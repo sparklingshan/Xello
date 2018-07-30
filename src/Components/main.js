@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Filter from './filter.js';
 import Board from './board.js';
+import Comment from './comment.js';
 
 class Home extends Component {
   render() {
@@ -25,6 +26,7 @@ class Home extends Component {
         </nav>
         <Filter/>
         <Board />
+        <Comment/>
       </div>
     );
   }

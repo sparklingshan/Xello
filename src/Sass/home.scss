@@ -3,6 +3,7 @@
     height: 804px;
     background-color: #FAFAFA;
     margin: 0 auto;
+    position: relative;
 }
 
 .home-nav{
@@ -32,4 +33,19 @@
     color: white;
     float: left;
     margin-top: 0%;
+}
+
+.comment{
+    position: fixed;
+    width: 260px;
+    height: 50px;
+    bottom: 0;
+    right: 0%;
+    background-color: #555;
+    opacity: 0.7;
+    border-top-left-radius: 10px;
+}
+.comment:hover{
+    opacity: 1;
+    cursor: pointer;
 }

@@ -1,4 +1,4 @@
-.filter{
+.filter {
     width: 96%;
     margin: 0% auto;
     border-radius: 6px;
@@ -6,4 +6,58 @@
     height: 6%;
     border: 1px #E6E6E6 solid;
     box-shadow: 0px 0px 5px #eee;
+}
+
+.checkbox{
+    width: 8%;
+    float: left;
+    margin-top: 1.2%;
+    font-size: 0.8em;
+}
+
+.checkbox label:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.checkbox .cr {
+    position: relative;
+    display: inline-block;
+    border: 1px solid #a9a9a9;
+    border-radius: .25em;
+    width: 1.2em;
+    height: 1.2em;
+    margin-right: .5em;
+    background-color: white;
+}
+
+.checkbox .cr .cr-icon {
+    position: absolute;
+    font-size: .8em;
+    line-height: 0;
+    top: 50%;
+    left: 15%;
+}
+
+.checkbox label input[type="checkbox"] {
+    display: none;
+}
+
+.checkbox label input[type="checkbox"]+.cr>.cr-icon {
+    opacity: 0;
+}
+
+.checkbox label input[type="checkbox"]:checked+.cr>.cr-icon {
+    opacity: 1;
+}
+
+.checkbox label input[type="checkbox"]:disabled+.cr {
+    opacity: .5;
+}
+
+.angle-down{
+    position:   absolute;
+    right: 3%;
+    top: 27%;
 }
